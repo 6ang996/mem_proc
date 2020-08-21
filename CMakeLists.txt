@@ -11,3 +11,7 @@ add_executable(procmem  ${PROJECT_SOURCE_DIR}/procmem_src/procmem.c)
 target_link_libraries(procmem pagemap)
 add_executable(procrank  ${PROJECT_SOURCE_DIR}/procrank_src/procrank.c)
 target_link_libraries(procrank pagemap)
+
+# Installation
+install(TARGETS procmem DESTINATION bin/)
+install(TARGETS procrank DESTINATION bin/)
