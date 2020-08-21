@@ -7,7 +7,7 @@ add_definitions (
 include_directories (${PROJECT_SOURCE_DIR}/libpagemap/include)
 add_library(pagemap ${SOURCES})
 
-add_executable(procmem  ${PROJECT_SOURCE_DIR}/procmem/procmem.c)
+add_executable(procmem  ${PROJECT_SOURCE_DIR}/procmem_src/procmem.c)
 target_link_libraries(procmem pagemap)
-add_executable(procrank  ${PROJECT_SOURCE_DIR}/procrank/procrank.c)
+add_executable(procrank  ${PROJECT_SOURCE_DIR}/procrank_src/procrank.c)
 target_link_libraries(procrank pagemap)
